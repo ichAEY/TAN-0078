@@ -1085,7 +1085,7 @@ export default function MasterTemplate() {
           <div
             className="mct-hero-visual"
           >
-            {site.images.heroDecoration ? (
+            {(siteSpecialtyMode === "hair" || siteSpecialtyMode === "generic") && site.images.heroDecoration ? (
               <div className="mct-master-tools" aria-hidden="true"><img className="mct-master-hero-image" src={site.images.heroDecoration} alt="" /></div>
             ) : null}
             <figure className="dct-hero-portrait">
