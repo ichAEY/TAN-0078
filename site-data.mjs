@@ -80,7 +80,7 @@ export default {
     "portrait": `${publicBase}/masterpc.webp`,
     "about": `${publicBase}/master.webp`,
     "favicon": `${publicBase}/favicon-source.png`,
-    "heroDecoration": "",
+    "heroDecoration": `${publicBase}/assets/template/hair-tools.png`,
     "beforeAfter": [],
     "gallery": [
       {
