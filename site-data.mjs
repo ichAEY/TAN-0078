@@ -83,17 +83,50 @@ export default {
     "heroDecoration": "",
     "beforeAfter": [],
     "gallery": [
-      `${publicBase}/galery00001.webp`,
-      `${publicBase}/galery00002.webp`,
-      `${publicBase}/galery00003.webp`,
-      `${publicBase}/galery00004.webp`,
-      `${publicBase}/galery00005.webp`,
-      `${publicBase}/galery00006.webp`,
-      `${publicBase}/galery00007.webp`,
-      `${publicBase}/galery00008.webp`,
-      `${publicBase}/galery00009.webp`,
-      `${publicBase}/galery00010.webp`,
-      `${publicBase}/galery00011.webp`
+      {
+        "src": `${publicBase}/galery00001.webp`,
+        "alt": ""
+      },
+      {
+        "src": `${publicBase}/galery00002.webp`,
+        "alt": ""
+      },
+      {
+        "src": `${publicBase}/galery00003.webp`,
+        "alt": ""
+      },
+      {
+        "src": `${publicBase}/galery00004.webp`,
+        "alt": ""
+      },
+      {
+        "src": `${publicBase}/galery00005.webp`,
+        "alt": ""
+      },
+      {
+        "src": `${publicBase}/galery00006.webp`,
+        "alt": ""
+      },
+      {
+        "src": `${publicBase}/galery00007.webp`,
+        "alt": ""
+      },
+      {
+        "src": `${publicBase}/galery00008.webp`,
+        "alt": ""
+      },
+      {
+        "src": `${publicBase}/galery00009.webp`,
+        "alt": ""
+      },
+      {
+        "src": `${publicBase}/galery00010.webp`,
+        "alt": ""
+      },
+      {
+        "src": `${publicBase}/galery00011.webp`,
+        "alt": ""
+      }
     ]
   },
   "services": {
