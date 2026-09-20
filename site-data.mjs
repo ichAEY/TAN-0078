@@ -3,34 +3,41 @@ const publicBase = process.env.NEXT_PUBLIC_BASE_PATH || "";
 export default {
   "basePath": publicBase,
   "template": {
-    "specialty": "hair",
-    "bookingProvider": "DIKIDI",
+    "specialty": "generic",
+    "bookingProvider": "",
     "reviewSource": "Яндекс Карты"
   },
   "brand": {
-    "name": "Ольга",
-    "subtitle": "Парикмахер-стилист",
+    "name": "Ольга Медына",
+    "subtitle": "Парикмахер-стилист и мастер по ресницам и бровям",
     "monogram": "О"
   },
   "master": {
-    "name": "Ольга",
+    "name": "Ольга Медына",
     "dative": "Ольге",
     "genitive": "Ольги",
     "instrumental": "Ольгой",
     "monogram": "О",
-    "profession": "парикмахер-стилист",
+    "profession": "парикмахер-стилист и мастер по ресницам и бровям",
     "heroTitle": "",
-    "heroEmphasis": "эксперт по волосам",
-    "heroCaption": "Парикмахер-стилист",
-    "imageAlt": "парикмахер-стилист",
-    "heroCopy": "Стрижки, окрашивание, блонд, уход и укладки с вниманием к состоянию волос, оттенку и вашему образу.",
+    "heroEmphasis": "мастер красоты",
+    "heroCaption": "Парикмахер-стилист и мастер по ресницам и бровям",
+    "imageAlt": "Ольга Медына",
+    "heroCopy": "Стрижки, окрашивание, уход за волосами, ресницы, брови и макияж.",
     "visitMotto": "",
     "experienceYears": null,
     "experienceAria": "",
-    "aboutTitle": "Ольга",
-    "aboutLead": "",
-    "aboutParagraphs": [],
-    "skills": []
+    "aboutTitle": "Ольга Медына",
+    "aboutLead": "Я Ольга — мастер по волосам, ресницам и бровям.",
+    "aboutParagraphs": [
+      "Работаю со стрижками, окрашиванием и уходом за волосами, наращиванием и ламинированием ресниц, оформлением бровей и макияжем.",
+      "Подбираю услугу под ваш образ и желаемый результат."
+    ],
+    "skills": [
+      "Волосы и окрашивание",
+      "Ресницы и брови",
+      "Макияж и перманент"
+    ]
   },
   "location": {
     "country": "Россия",
@@ -40,19 +47,23 @@ export default {
     "cityMetro": "Москва",
     "address": "посёлок Коммунарка, улица Александры Монаховой, 84, корп. 1",
     "mapCardAddress": "посёлок Коммунарка, улица Александры Монаховой, 84, корп. 1",
-    "schedule": "По предварительной записи",
-    "scheduleCapitalized": "По предварительной записи",
+    "schedule": "Ежедневно 10:00–22:00",
+    "scheduleCapitalized": "Ежедневно 10:00–22:00",
     "timeZone": "Europe/Moscow",
-    "openTime": "00:00",
-    "closeTime": "00:00"
+    "openTime": "10:00",
+    "closeTime": "22:00"
   },
   "contacts": {
     "phoneDisplay": "+7 (905) 505-31-21",
     "phoneHref": "tel:+79055053121",
-    "messenger": null
+    "messenger": {
+      "type": "whatsapp",
+      "label": "WhatsApp",
+      "url": "https://wa.me/79055053121?text=%D0%9E%D0%B1%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D0%B5+%D0%B8%D0%B7+%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81+%D0%9A%D0%B0%D1%80%D1%82%0A%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!+%D0%9C%D0%B5%D0%BD%D1%8F+%D0%B7%D0%B0%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D0%BE%D0%B2%D0%B0%D0%BB%D0%BE+%D0%B2%D0%B0%D1%88%D0%B5+%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5"
+    }
   },
   "links": {
-    "bookingUrl": "https://dikidi.net/1778964",
+    "bookingUrl": "",
     "reviewsUrl": "https://yandex.ru/maps/org/parikmakher_stilist/80522187436/",
     "mapUrl": "https://yandex.ru/maps/org/parikmakher_stilist/80522187436/",
     "routeUrl": "https://yandex.ru/maps/org/parikmakher_stilist/80522187436/",
@@ -66,46 +77,82 @@ export default {
   },
   "images": {
     "logo": "",
-    "portrait": `${publicBase}/placeholder.svg`,
-    "about": `${publicBase}/placeholder.svg`,
+    "portrait": `${publicBase}/masterpc.webp`,
+    "about": `${publicBase}/master.webp`,
     "favicon": `${publicBase}/favicon-source.png`,
-    "heroDecoration": `${publicBase}/assets/template/hair-tools.png`,
+    "heroDecoration": "",
     "beforeAfter": [],
-    "gallery": []
+    "gallery": [
+      `${publicBase}/galery00001.webp`,
+      `${publicBase}/galery00002.webp`,
+      `${publicBase}/galery00003.webp`,
+      `${publicBase}/galery00004.webp`,
+      `${publicBase}/galery00005.webp`,
+      `${publicBase}/galery00006.webp`,
+      `${publicBase}/galery00007.webp`,
+      `${publicBase}/galery00008.webp`,
+      `${publicBase}/galery00009.webp`,
+      `${publicBase}/galery00010.webp`,
+      `${publicBase}/galery00011.webp`
+    ]
   },
   "services": {
     "groups": [
       {
-        "id": "haircuts",
-        "label": "Стрижки",
+        "id": "haircuts-styling",
+        "label": "Стрижки и укладки",
         "services": [
           {
-            "name": "Стрижка длинных волос",
-            "price": "",
+            "name": "Стрижка женская — длинные волосы",
+            "price": "2 500 ₽",
+            "time": "",
+            "description": "Стрижка Длинные , входит мойка, и легкая укладка",
+            "url": ""
+          },
+          {
+            "name": "Стрижка средняя длина",
+            "price": "2 000 ₽",
             "time": "",
             "description": "",
             "url": ""
           },
           {
-            "name": "Стрижка средней длины",
-            "price": "",
+            "name": "Стрижка короткая",
+            "price": "1 500 ₽",
             "time": "",
             "description": "",
             "url": ""
           },
           {
-            "name": "Стрижка коротких волос",
-            "price": "",
+            "name": "Стрижка ровный срез",
+            "price": "1 500 ₽",
             "time": "",
-            "description": "",
+            "description": "Стрижка ровный срез машинкой ,без мытья головы",
             "url": ""
           },
           {
-            "name": "Стрижка ровным срезом машинкой",
+            "name": "Повседневная укладка (фен, расчёска, стайлинг)",
             "price": "",
             "time": "",
             "description": "",
-            "url": ""
+            "url": "",
+            "variants": [
+              {
+                "label": "До плеч",
+                "price": "1 650 ₽",
+                "time": ""
+              },
+              {
+                "label": "До верха лопаток",
+                "price": "2 200 ₽",
+                "time": ""
+              },
+              {
+                "label": "До середины спины",
+                "price": "2 750 ₽",
+                "time": ""
+              }
+            ]
           }
         ]
       },
@@ -114,25 +161,87 @@ export default {
         "label": "Окрашивание",
         "services": [
           {
-            "name": "Окрашивание",
-            "price": "",
+            "name": "Окрашивание корней (до 2 см)",
+            "price": "3 850 ₽",
             "time": "",
             "description": "",
             "url": ""
           },
           {
-            "name": "Сложное окрашивание",
-            "price": "",
+            "name": "Окрашивание в один тон / Тонирование",
+            "price": "5 300–8 250 ₽",
             "time": "",
             "description": "",
             "url": ""
+          },
+          {
+            "name": "Сложное окрашивание / AirTouch",
+            "price": "11 000–15 400 ₽",
+            "time": "",
+            "description": "",
+            "url": ""
+          },
+          {
+            "name": "Тотал блонд",
+            "price": "",
+            "time": "",
+            "description": "",
+            "url": "",
+            "variants": [
+              {
+                "label": "До плеч",
+                "price": "8 800 ₽",
+                "time": ""
+              },
+              {
+                "label": "До верха лопаток",
+                "price": "11 000 ₽",
+                "time": ""
+              },
+              {
+                "label": "До середины спины",
+                "price": "13 200 ₽",
+                "time": ""
+              }
+            ]
+          },
+          {
+            "name": "Выход из чёрного",
+            "price": "",
+            "time": "",
+            "description": "",
+            "url": "",
+            "variants": [
+              {
+                "label": "До плеч",
+                "price": "16 500 ₽",
+                "time": ""
+              },
+              {
+                "label": "До верха лопаток",
+                "price": "19 800 ₽",
+                "time": ""
+              },
+              {
+                "label": "До середины спины",
+                "price": "23 100 ₽",
+                "time": ""
+              }
+            ]
           }
         ]
       },
       {
-        "id": "care",
-        "label": "Уход и укладка",
+        "id": "hair-care",
+        "label": "Уход за волосами",
         "services": [
+          {
+            "name": "Коллаген для волос",
+            "price": "7 000 ₽",
+            "time": "",
+            "description": "",
+            "url": ""
+          },
           {
             "name": "Ботокс для волос",
             "price": "6 500 ₽",
@@ -141,22 +250,220 @@ export default {
             "url": ""
           },
           {
-            "name": "Восстанавливающие процедуры",
-            "price": "",
+            "name": "БИОзавивка волос для мужчин",
+            "price": "7 000 ₽",
+            "time": "",
+            "description": "Цена зависит от длины и густоты.",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "id": "lash-extensions",
+        "label": "Наращивание ресниц",
+        "services": [
+          {
+            "name": "Креативное наращивание ресниц",
+            "price": "7 500 ₽",
+            "time": "",
+            "description": "Все виды креативного наращивания",
+            "url": ""
+          },
+          {
+            "name": "Наращивание ресниц — 1D",
+            "price": "4 500 ₽",
             "time": "",
             "description": "",
             "url": ""
           },
           {
-            "name": "Укладка",
-            "price": "",
+            "name": "Наращивание ресниц — 1,5D",
+            "price": "5 000 ₽",
             "time": "",
             "description": "",
             "url": ""
           },
           {
-            "name": "Биозавивка волос",
-            "price": "",
+            "name": "Наращивание ресниц — 2D",
+            "price": "5 000 ₽",
+            "time": "",
+            "description": "",
+            "url": ""
+          },
+          {
+            "name": "Наращивание ресниц — 3D",
+            "price": "6 500 ₽",
+            "time": "",
+            "description": "",
+            "url": ""
+          },
+          {
+            "name": "Цветные ресницы",
+            "price": "300 ₽",
+            "time": "",
+            "description": "Добавляется к стоимости услуги.",
+            "url": ""
+          },
+          {
+            "name": "LED наращивание — 1D",
+            "price": "4 500 ₽",
+            "time": "",
+            "description": "",
+            "url": ""
+          },
+          {
+            "name": "LED наращивание — 1,5D",
+            "price": "5 000 ₽",
+            "time": "",
+            "description": "",
+            "url": ""
+          },
+          {
+            "name": "LED наращивание — 2D",
+            "price": "5 000 ₽",
+            "time": "",
+            "description": "ТРЕНД наращивание ресниц",
+            "url": ""
+          },
+          {
+            "name": "LED наращивание — 3D",
+            "price": "6 500 ₽",
+            "time": "",
+            "description": "",
+            "url": ""
+          },
+          {
+            "name": "LED голливудское наращивание",
+            "price": "7 500 ₽",
+            "time": "",
+            "description": "",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "id": "lashes",
+        "label": "Ресницы",
+        "services": [
+          {
+            "name": "Ламинирование ресниц",
+            "price": "2 750 ₽",
+            "time": "",
+            "description": "",
+            "url": ""
+          },
+          {
+            "name": "Окрашивание ресниц (краска)",
+            "price": "400 ₽",
+            "time": "",
+            "description": "",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "id": "brows",
+        "label": "Брови",
+        "services": [
+          {
+            "name": "Архитектура + окрашивание бровей (краска)",
+            "price": "1 800 ₽",
+            "time": "",
+            "description": "",
+            "url": ""
+          },
+          {
+            "name": "Долговременная укладка бровей",
+            "price": "2 750 ₽",
+            "time": "",
+            "description": "",
+            "url": ""
+          },
+          {
+            "name": "Ламинирование бровей",
+            "price": "2 500 ₽",
+            "time": "",
+            "description": "",
+            "url": ""
+          },
+          {
+            "name": "Окрашивание бровей",
+            "price": "1 600 ₽",
+            "time": "",
+            "description": "",
+            "url": ""
+          },
+          {
+            "name": "Коррекция и архитектура бровей",
+            "price": "1 600 ₽",
+            "time": "",
+            "description": "",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "id": "permanent-makeup",
+        "label": "Перманентный макияж",
+        "services": [
+          {
+            "name": "Перманентный макияж бровей",
+            "price": "11 000 ₽",
+            "time": "",
+            "description": "",
+            "url": ""
+          },
+          {
+            "name": "Перманентный макияж губ",
+            "price": "11 000 ₽",
+            "time": "",
+            "description": "",
+            "url": ""
+          },
+          {
+            "name": "Перманентный макияж межресничного пространства",
+            "price": "11 000 ₽",
+            "time": "",
+            "description": "",
+            "url": ""
+          },
+          {
+            "name": "Коррекция перманентного макияжа (брови)",
+            "price": "5 500 ₽",
+            "time": "",
+            "description": "",
+            "url": ""
+          },
+          {
+            "name": "Коррекция перманентного макияжа (губы)",
+            "price": "5 500 ₽",
+            "time": "",
+            "description": "",
+            "url": ""
+          },
+          {
+            "name": "Коррекция перманентного макияжа (межресничное пространство)",
+            "price": "5 500 ₽",
+            "time": "",
+            "description": "",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "id": "makeup",
+        "label": "Макияж",
+        "services": [
+          {
+            "name": "Дневной макияж",
+            "price": "3 000 ₽",
+            "time": "",
+            "description": "",
+            "url": ""
+          },
+          {
+            "name": "Вечерний макияж",
+            "price": "3 500 ₽",
             "time": "",
             "description": "",
             "url": ""
@@ -179,60 +486,103 @@ export default {
     ],
     "translations": {
       "en": {
-        "мастер маникюра и педикюра": "manicure and pedicure specialist",
-        "эксперт по маникюру и педикюру": "manicure and pedicure expert",
-        "Мастер маникюра и педикюра": "Manicure and pedicure specialist",
-        "Маникюр, педикюр и уход за ногтями с вниманием к аккуратности, форме и качеству результата.": "Manicure, pedicure and nail care with attention to precision, shape and quality.",
-        "Выполняю маникюр и педикюр, наращивание и коррекцию ногтей.": "I provide manicure and pedicure, nail extensions and corrections.",
-        "Работаю со стерильными инструментами и уделяю внимание аккуратности, форме и качеству результата.": "I work with sterile instruments and pay close attention to precision, shape and the quality of the result.",
-        "Маникюр и педикюр": "Manicure and pedicure",
-        "Наращивание и коррекция": "Extensions and corrections",
-        "Стерильные инструменты": "Sterile instruments",
-        "колорист и мастер по волосам": "colorist and hair specialist",
-        "парикмахер-стилист": "hair stylist",
-        "парикмахер-колорист": "hair colorist",
-        "технолог-колорист": "hair technologist and colorist",
-        "Колорист": "Colorist",
-        "Парикмахер-стилист": "Hair stylist",
-        "Парикмахер-колорист": "Hair colorist",
-        "Технолог-колорист": "Hair technologist and colorist",
-        "эксперт по волосам": "hair expert",
-        "Стрижки, окрашивание, блонд, уход и укладки с вниманием к состоянию волос, оттенку и вашему образу.": "Haircuts, coloring, blonding, care and styling with attention to hair condition, tone and your look.",
-        "Специализируюсь на стрижках и окрашивании, blond и сложных техниках, уходе и реконструкции волос.": "I specialize in haircuts and coloring, blond and complex techniques, hair care and reconstruction.",
-        "Работаю с формой, цветом и состоянием волос, чтобы результат выглядел цельно и подходил именно вам.": "I work with shape, color and hair condition so the result looks cohesive and suits you.",
-        "Стрижки и окрашивание": "Haircuts and coloring",
-        "Blond и сложные техники": "Blond and complex techniques",
-        "Уход и реконструкция волос": "Hair care and reconstruction",
+        "парикмахер-стилист и мастер по ресницам и бровям": "hair stylist and lash & brow artist",
+        "мастер красоты": "beauty specialist",
+        "Парикмахер-стилист и мастер по ресницам и бровям": "Hair stylist and lash & brow artist",
+        "Ольга Медына": "Olga Medyna",
+        "Стрижки, окрашивание, уход за волосами, ресницы, брови и макияж.": "Haircuts, coloring, hair care, lashes, brows and makeup.",
+        "Я Ольга — мастер по волосам, ресницам и бровям.": "I am Olga — a hair, lash and brow specialist.",
+        "Работаю со стрижками, окрашиванием и уходом за волосами, наращиванием и ламинированием ресниц, оформлением бровей и макияжем.": "I work with haircuts, coloring and hair care, lash extensions and lamination, brow styling and makeup.",
+        "Подбираю услугу под ваш образ и желаемый результат.": "I help choose the service to match your look and desired result.",
+        "Волосы и окрашивание": "Hair and coloring",
+        "Ресницы и брови": "Lashes and brows",
+        "Макияж и перманент": "Makeup and permanent makeup",
         "Москва": "Moscow",
-        "Щёлково": "Shchyolkovo",
-        "Беляево": "Belyayevo",
-        "Печатники": "Pechatniki",
-        "По предварительной записи": "By appointment",
-        "Строго по предварительной записи": "Strictly by appointment",
-        "Пн–Сб 10:00–22:00": "Mon–Sat 10:00–22:00",
-        "Ежедневно 10:00–22:00": "Daily 10:00–22:00",
-        "Ольга": "Olga",
         "посёлок Коммунарка, улица Александры Монаховой, 84, корп. 1": "84 bldg. 1 Aleksandry Monakhovoy Street, Kommunarka, Moscow",
-        "Стрижки": "Haircuts",
-        "Стрижка длинных волос": "Long hair haircut",
-        "Стрижка средней длины": "Medium-length haircut",
-        "Стрижка коротких волос": "Short haircut",
-        "Стрижка ровным срезом машинкой": "Straight machine cut",
+        "Ежедневно 10:00–22:00": "Daily 10:00–22:00",
+        "Стрижки и укладки": "Haircuts and styling",
+        "Стрижка женская — длинные волосы": "Women's haircut — long hair",
+        "Стрижка Длинные , входит мойка, и легкая укладка": "Long-hair haircut includes washing and light styling",
+        "Стрижка средняя длина": "Medium-length haircut",
+        "Стрижка короткая": "Short haircut",
+        "Стрижка ровный срез": "Straight cut",
+        "Стрижка ровный срез машинкой ,без мытья головы": "Straight machine cut without hair washing",
+        "Повседневная укладка (фен, расчёска, стайлинг)": "Everyday styling (hairdryer, brush, styling products)",
+        "До плеч": "Shoulder length",
+        "До верха лопаток": "To the top of the shoulder blades",
+        "До середины спины": "To mid-back",
         "Окрашивание": "Coloring",
-        "Сложное окрашивание": "Complex coloring",
-        "Уход и укладка": "Care and styling",
+        "Окрашивание корней (до 2 см)": "Root coloring (up to 2 cm)",
+        "Окрашивание в один тон / Тонирование": "Single-tone coloring / Toning",
+        "Сложное окрашивание / AirTouch": "Complex coloring / AirTouch",
+        "Тотал блонд": "Total blond",
+        "Выход из чёрного": "Going from black",
+        "Уход за волосами": "Hair care",
+        "Коллаген для волос": "Hair collagen treatment",
         "Ботокс для волос": "Hair botox",
-        "Восстанавливающие процедуры": "Restorative treatments",
-        "Укладка": "Styling",
-        "Биозавивка волос": "Bio perm",
-        "Я Ольга — эксперт по волосам.": "I am Olga — a hair expert."
+        "БИОзавивка волос для мужчин": "Bio perm for men",
+        "Цена зависит от длины и густоты.": "Price depends on hair length and density.",
+        "Наращивание ресниц": "Lash extensions",
+        "Креативное наращивание ресниц": "Creative lash extensions",
+        "Все виды креативного наращивания": "All types of creative lash extensions",
+        "Наращивание ресниц — 1D": "Lash extensions — 1D",
+        "Наращивание ресниц — 1,5D": "Lash extensions — 1.5D",
+        "Наращивание ресниц — 2D": "Lash extensions — 2D",
+        "Наращивание ресниц — 3D": "Lash extensions — 3D",
+        "Цветные ресницы": "Colored lashes",
+        "Добавляется к стоимости услуги.": "Added to the service price.",
+        "LED наращивание — 1D": "LED lash extensions — 1D",
+        "LED наращивание — 1,5D": "LED lash extensions — 1.5D",
+        "LED наращивание — 2D": "LED lash extensions — 2D",
+        "ТРЕНД наращивание ресниц": "TREND lash extensions",
+        "LED наращивание — 3D": "LED lash extensions — 3D",
+        "LED голливудское наращивание": "LED Hollywood lash extensions",
+        "Ресницы": "Lashes",
+        "Ламинирование ресниц": "Lash lamination",
+        "Окрашивание ресниц (краска)": "Lash tinting",
+        "Брови": "Brows",
+        "Архитектура + окрашивание бровей (краска)": "Brow shaping + tinting",
+        "Долговременная укладка бровей": "Long-lasting brow styling",
+        "Ламинирование бровей": "Brow lamination",
+        "Окрашивание бровей": "Brow tinting",
+        "Коррекция и архитектура бровей": "Brow correction and shaping",
+        "Перманентный макияж": "Permanent makeup",
+        "Перманентный макияж бровей": "Permanent brow makeup",
+        "Перманентный макияж губ": "Permanent lip makeup",
+        "Перманентный макияж межресничного пространства": "Permanent lash-line makeup",
+        "Коррекция перманентного макияжа (брови)": "Permanent makeup correction (brows)",
+        "Коррекция перманентного макияжа (губы)": "Permanent makeup correction (lips)",
+        "Коррекция перманентного макияжа (межресничное пространство)": "Permanent makeup correction (lash line)",
+        "Макияж": "Makeup",
+        "Дневной макияж": "Day makeup",
+        "Вечерний макияж": "Evening makeup"
       }
     }
   },
   "reviews": [
     {
-      "author": "Яна",
-      "text": "Ольга — замечательный и внимательный мастер. Профессионал своего дела, который постоянно совершенствует свои навыки и следит за новыми тенденциями. Очень чутко прислушивается к пожеланиям, подробно объясняет процесс и помогает подобрать идеальное решение. Результат всегда радует — цвет получается именно таким, как хотелось, а качество волос остаётся на высоте. Атмосфера во время работы комфортная и спокойная. С уверенностью могу рекомендовать Ольгу всем, кто ищет действительно грамотного колориста.",
+      "author": "Анна Арсекова",
+      "text": "Была сегодня на ламинировании ресниц у мастера Ольги , очень все понравилось ,уютное место ,приятное общение ,кажется я нашла себе мастера красоты 😊",
+      "source": "Яндекс Карты"
+    },
+    {
+      "author": "Блышик З.К.Н.26.52",
+      "text": "Спасибо большое мастеру за прекрасные ресницы! Держатся 2 месяца, очень красиво и нежно! Сразу видно, мастер профессиональные своего дела Буквально случайно нашла ее на просторах интернета и не пожалела!",
+      "source": "Яндекс Карты"
+    },
+    {
+      "author": "N.",
+      "text": "Хожу на LED- ресницы к мастеру ОЛЬГА, очень довольна. Ресницы держаться 2 мес (вместо обычных 3-4 недель), выглядят очень естественно, на ощупь как свои собственные ресницы! Рекомендую...",
+      "source": "Яндекс Карты"
+    },
+    {
+      "author": "Лейла Мамедова",
+      "text": "Хочу выразить огромную благодарность Ольге! Ценю ее трепетное отношение к профессии. В целях экономии времени, очень актуально стало обслуживаться в одном месте, а еще удобнее в одних руках. Прекрасно же, когда можно сделать окрашивание, стрижку, брови и ресницы за один визит в салон.",
+      "source": "Яндекс Карты"
+    },
+    {
+      "author": "Евгения Артюх",
+      "text": "Хожу к Ольге на ресницы регулярно) Лучший мастер которого я встречала😻 Всегда вежлива, поможет с выбором, атмосфера просто шикарная. Работа выполнена всегда на высшем уровне ❤️",
       "source": "Яндекс Карты"
     }
   ],
@@ -240,13 +590,14 @@ export default {
   "amenities": [],
   "seo": {
     "siteUrl": "https://ichaey.github.io/TAN-0078/",
-    "title": "Ольга — парикмахер-стилист",
-    "description": "Стрижки, окрашивание и уход за волосами у парикмахера-стилиста Ольги в Москве. Запись через DIKIDI.",
+    "title": "Ольга Медына — парикмахер-стилист и бьюти-мастер",
+    "description": "Стрижки, окрашивание, уход за волосами, ресницы, брови, перманентный макияж и макияж у Ольги Медыны в Коммунарке.",
     "keywords": [
-      "парикмахер Ольга",
-      "стилист Москва",
-      "окрашивание волос",
-      "Коммунарка"
+      "Ольга Медына",
+      "парикмахер Коммунарка",
+      "окрашивание волос Коммунарка",
+      "наращивание ресниц Коммунарка",
+      "брови Коммунарка"
     ],
     "locale": "ru_RU"
   },
